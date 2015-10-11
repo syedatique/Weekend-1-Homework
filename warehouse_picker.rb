@@ -82,3 +82,5 @@ until response == 'q'
   pause
   response = menu
 end
+
+# If there is anothir bay (Bay d) opposite to "c", then we need to calculate 2 trip route for each list, and compare which one is shotrtest. 
