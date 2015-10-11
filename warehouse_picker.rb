@@ -31,9 +31,7 @@ def find_bay
 
   bay_select.each {|bay| puts "Bay #{bay} contain product #{@list_bay_in_key[bay]}"}
 
-  # distance=bay_select.map { |bay| @lane_arrangement.index(bay) }.max
-  # puts "The distance from the two furthest apart bays is #{distance}"
-
+  # distance=bay_select.map { |bay| @lane_arrangement.index(bay).max - @lane_arrangement.index(bay).min }
   distance = []
   bay_select.each_with_index do |bay, index|
    distance[index] = @lane_arrangement.index(bay)
